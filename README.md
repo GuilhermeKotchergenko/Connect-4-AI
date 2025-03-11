@@ -1,1 +1,1 @@
-# Connect-4-MC-DT
+# Connect-4-AI
