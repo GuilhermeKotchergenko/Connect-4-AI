@@ -1,12 +1,9 @@
-import random
-#import numpy as np
 from copy import deepcopy
+from config import NUM_ROWS, NUM_COLS
 
-NUM_ROWS = 6
-NUM_COLS = 7
+
 
 class State:
-    
     def __init__(self):
         # initialize the board info here and any additional variables
         self.board = [[0]*NUM_COLS for i in range(NUM_ROWS)] # [[0,0,0,...], [0,0,0,...], ...] board initial state (all zeros)

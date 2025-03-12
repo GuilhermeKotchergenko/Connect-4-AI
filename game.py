@@ -1,8 +1,26 @@
 import time
+from config import NUM_ROWS, NUM_COLS
 from state import State
 
+
+def display_board(board):
+        #Print the Connect 4 board in a readable format
+        print("\n  1 2 3 4 5 6 7")  # Column numbers
+        print(" ---------------")
+        for row in board:
+            print("|", end="")
+            for cell in row:
+                if cell == 0:
+                    print(" ", end="|")
+                elif cell == 1:
+                    print("X", end="|")
+                elif cell == 2:
+                    print("O", end="|")
+            print()
+        print(" ---------------")
+
+
 class ConnectFourGame:
-    
     def __init__(self, player_1_ai, player_2_ai):
         self.state = State() # initial state
         self.player_1_ai = player_1_ai # store player 1 type (move selection method)
@@ -45,3 +63,4 @@ class ConnectFourGame:
         print(f"  Player 2: {results[2]} victories")
         print(f"  Draws: {results[0]} ")
         print("===============================")
+
