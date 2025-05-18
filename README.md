@@ -114,7 +114,7 @@ Connect‑4‑AI/
 | Match‑up (100 games)                    | Win % P1 | Win % P2 | Draw % |
 | --------------------------------------- | -------: | -------: | -----: |
 | Random vs Random                        |     51.0 |     49.0 |    0.0 |
-| Random vs MCTS (100 epochs)             |     X |     Y |    0.0 |
+| Random vs MCTS (100 epochs)             |     4.0 |     96.0 |    0.0 |
 | Random vs Parallel-MCTS (100 epochs)    |     6.0 |     94.0 |    0.0 |
 | Parallel‑MCTS (100) vs Itself           |     56.0 |     44.0 |    0.0 |
 | Parallel‑MCTS (100) vs Itself (Reward Draw=0.5)          |     63.0 |     37.0 |    0.0 |
@@ -125,7 +125,6 @@ Connect‑4‑AI/
 | Decision Tree (Bad dataset by random simulation) vs Random  |     53.0 |     47.0 |    0.0 |
 | Decision Tree (Mixed dataset mostly by MC) vs Random  |     86.0 |     14.0 |    0.0 |
 | Decision Tree (Big dataset only by MC) vs MC  |     26.0 |     74.0 |    0.0 |
-| Decision Tree (Mixed) vs Itself  |     0.0 |     100.0 |    0.0 |
 | Decision Tree (Mixed) vs Ensemble Vote (Mixed)  |     24.0 |     76.0 |    0.0 |
 
 *(Your numbers will vary — run the notebook to reproduce.)*
