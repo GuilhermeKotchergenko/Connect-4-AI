@@ -1,4 +1,9 @@
 import pygame
+
+import os
+# In case you dont have a sound driver (ex: WSL does not support)
+os.environ["SDL_AUDIODRIVER"] = "dummy"
+
 import random
 from time import sleep
 from Nanahira.constants import *
